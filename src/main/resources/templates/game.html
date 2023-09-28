@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${game.getWord()}"></h1>
+<h1 th:text="${game.getWordAtLine()}"></h1>
+<h1 th:text="${game.getInputs()}"></h1>
+<h1 th:text="${game.getLife()}"></h1>
+<form th:action="@{/play}" method="post">
+    <input type="text"maxlength="1" name="input">
+    <button type="submit">OK</button>
+</form>
+</body>
+</html>
